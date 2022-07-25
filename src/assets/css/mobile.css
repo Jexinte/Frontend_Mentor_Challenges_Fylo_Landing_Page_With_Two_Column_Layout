@@ -1,0 +1,109 @@
+
+
+@media screen and (max-width:992px) {
+ 
+  body {
+    padding-inline:16px;
+    overflow-x: hidden;
+    
+  }
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top:64px;
+  padding-bottom: 75px;
+  gap:1em;
+}
+
+.logo {
+  cursor: pointer;
+}
+nav {
+  font-family: var(--raleway);
+  position: relative;
+  top:14px;
+}
+nav a {
+  margin-right: 1em;
+}
+
+/* PRESENTATION */
+
+.presentation {
+  display: flex;
+  gap:20px;
+  flex-direction:column;
+  text-align: center;
+}
+
+
+
+.getStarted {
+  position: relative;
+}
+
+form{
+
+  display: flex;
+  flex-direction: column;
+  gap:2em;
+
+}
+#mainTitle {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-family: var(--raleway);
+  padding-bottom: 16px;
+  padding-top: 1.5em;
+}
+
+#mainParagraph{
+  line-height: 1.6em;
+  font-family: var(--openSans);
+  padding-bottom: 11px;
+  font-weight: var(--400);
+  font-size: .9em;
+  width: 100%;
+}
+
+.right img {
+  width: 100%;
+}
+
+.right{
+  order: -1;
+}
+
+
+#mail{
+  padding-left: 1em;
+  padding : 8px 62px 8px 1em;
+  width: 100%;
+}
+
+
+.getStarted #submitButton {
+  background-color: var(--brightBlue);
+  padding: 8px 62px;
+  border-radius: 2px;
+  color:white;
+  font-family: var(--raleway);
+  font-weight: var(--700);
+  font-size: .9em;
+  border:none;
+  cursor: pointer;
+}
+
+.errorMsgHidden{
+  position: absolute;
+  bottom: 40px;
+  font-size: .8em;
+  visibility: hidden;
+  color:red;
+}
+
+
+
+}

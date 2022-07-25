@@ -1,0 +1,135 @@
+/* Raleway Regular 400 & Bold 700 Headings , CTA , Header Navigation*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Open Sans Regular 400 Body */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  /* PRIMARY COLORS  */
+    ---veryDarkBlue :hsl(243, 87%, 12%);
+    --desaturedBlue:hsl(238, 22%, 44%);
+
+  /* ACCENT */
+    --brightBlue : hsl(224, 93%, 58%);
+    --moderateCyan : hsl(170, 45%, 43%);
+
+  /* NEUTRAL */
+    --lightGrayishBlue:hsl(240, 75%, 98%);
+    --lightGray :hsl(0, 0%, 75%);
+
+  /* FONT FAMILY */
+    --raleway : 'Raleway';
+    --openSans : 'Open Sans';
+
+  /* FONT WEIGHT*/
+
+    --400 : 400;
+    --700 : 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color:black;
+}
+
+
+body {
+  padding-inline:76px;
+  
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top:64px;
+  padding-bottom: 75px;
+}
+
+.logo {
+  cursor: pointer;
+}
+nav {
+  font-family: var(--raleway);
+  position: relative;
+  top:14px;
+}
+nav a {
+  margin-right: 4em;
+}
+
+/* PRESENTATION */
+
+.presentation {
+  display: flex;
+  gap:90px
+}
+
+
+.getStarted {
+  position: relative;
+}
+#mainTitle {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-family: var(--raleway);
+  padding-bottom: 16px;
+  padding-top: 1.5em;
+}
+
+#mainParagraph{
+  line-height: 1.6em;
+  font-family: var(--openSans);
+  padding-bottom: 11px;
+  font-weight: var(--400);
+  font-size: .9em;
+  width: 100%;
+}
+
+.right img {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  gap:.5em;
+}
+
+#mail{
+  width: 38%;
+}
+#mail{
+  padding-left: 1em;
+}
+
+
+.getStarted #submitButton {
+  background-color: var(--brightBlue);
+  padding: 8px 62px;
+  border-radius: 2px;
+  color:white;
+  font-family: var(--raleway);
+  font-weight: var(--700);
+  font-size: .9em;
+  border:none;
+  cursor: pointer;
+}
+
+.errorMsgHidden{
+  position: absolute;
+  bottom: -30px;
+  font-size: .8em;
+  visibility: hidden;
+  color:red;
+}
