@@ -103,6 +103,36 @@
  </main>
 
 
+ <footer>
+  <div class="logo-contact">
+    <img class="logoDown" src="@/assets/images/logo-copy.svg" alt="Logo">
+    
+    <div class="phoneBox">
+      <img src="@/assets/images/icon-phone.svg" alt="Phone icon">
+      <p> Phone: +1-543-123-4567</p>
+    </div>
+    <div class="mailBox">
+      <img src="@/assets/images/icon-email.svg" alt="Mail icon">
+      <p>example@fylo.com</p>
+    </div>
+  </div>
+
+  <ul class="list1">
+    <li v-for="navigationLink2 in navigation2">{{navigationLink2}}</li>
+  </ul>
+
+   <ul class="list2">
+    <li v-for="navigationLink3 in navigation3">{{navigationLink3}}</li>
+  </ul>
+
+  <div class="social-medias">
+        <font-awesome-icon icon="fa-brands fa-facebook-f" class="fa-brands" id="facebook" />
+        <font-awesome-icon icon="fa-brands fa-twitter" class="fa-brands" />
+        <font-awesome-icon icon="fa-brands fa-instagram" class="fa-brands" />
+  </div>
+ </footer>
+
+
 </template>
 
 <script>
@@ -111,7 +141,9 @@
     
     data(){
       return {
-        navigation : ['Features','Team','Sign In']
+        navigation : ['Features','Team','Sign In'],
+        navigation2 : ['About Us','Jobs','Press','Blog'],
+        navigation3 : ['Contact Us','Terms','Privacy']
       }
     },
 
