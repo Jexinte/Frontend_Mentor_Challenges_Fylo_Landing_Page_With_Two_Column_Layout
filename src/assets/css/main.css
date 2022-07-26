@@ -36,17 +36,17 @@
 
 a {
   text-decoration: none;
+  color:black;
 }
 
 a:visited {
   color:black;
 }
 
-
-body {
-  padding-inline:76px;
-  
+p{
+  font-family: var(--openSans);
 }
+
 
 /* HEADER */
 
@@ -55,6 +55,7 @@ body {
   justify-content: space-between;
   padding-top:64px;
   padding-bottom: 75px;
+  padding-inline:76px;
 }
 
 .logo {
@@ -73,7 +74,9 @@ nav a {
 
 .presentation {
   display: flex;
-  gap:90px
+  gap:90px;
+  padding-inline:76px;
+  padding-bottom: 8em;
 }
 
 
@@ -99,6 +102,7 @@ nav a {
 
 .right img {
   width: 100%;
+  height: 100%;
 }
 
 form {
@@ -132,4 +136,185 @@ form {
   font-size: .8em;
   visibility: hidden;
   color:red;
+}
+
+/* PRODUCTIVE  */
+
+.productive {
+height: 80vh;
+/* background-color: red; */
+width: 100%;
+background-image: url('../images//bg-curve-desktop.svg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position-x:50%;
+display: flex;
+padding:4em 76px;
+gap:2em;
+
+}
+
+.main-title {
+  font-family: var(--raleway);
+  font-weight: var(--700);
+  padding-bottom: .5em;
+}
+
+.left2{
+  display: flex;
+  flex-direction: column;
+  gap:1em;
+}
+
+
+
+.main-paragraph {
+  font-size: .9em;
+}
+
+.second-paragraph {
+  font-size: .9em;
+}
+
+#works {
+  display: block;
+  position: relative;
+  color:var(--moderateCyan);
+  font-family: var(--raleway);
+  font-weight: var(--400);
+  font-size: .9em;
+}
+
+
+#works::after{
+  content:'';
+  position: absolute;
+  border-bottom: 1px solid var(--moderateCyan);
+  border-width: 1px;
+  display:block;
+  bottom:-5px;
+  width: 148px;
+
+}
+
+#works:hover {
+  filter:brightness(1.4);
+}
+
+.arrow {
+  position: relative;
+  top:3px;
+}
+
+.left3-img {
+  border-radius: 50%;
+  float: left;
+}
+
+.founder-card{
+  background-color: white;
+  padding:2em;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+  margin-top:2em;
+  width:422px;
+}
+
+blockquote {
+  font-family: var(--openSans);
+  font-weight: var(--400);
+  line-height: 1.6em;
+  padding-bottom:1.4em;
+}
+.professional-info {
+  position: relative;
+  left:.5em;
+  top:.3em;
+}
+.professional-info h3 {
+  font-family: var(--raleway);
+  font-weight: var(--700);
+  font-size: .9em;
+  line-height: 1.2em;
+}
+
+.professional-info p {
+  font-family: var(--openSans);
+  font-size: .8em;
+}
+
+
+
+.right3 img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ACCESS */
+
+.access {
+  display: flex;
+  gap: 2em;
+  padding: 4em 76px;
+  background-color: var(--desaturedBlue);
+  color:white;
+  justify-content: space-around;
+}
+
+.left4 {
+  display: flex;
+  flex-direction: column;
+  gap:1em;
+  width: 50%;
+}
+.left4 h2 {
+  font-family: var(--raleway);
+}
+
+.left4 p {
+  font-family: var(--openSans);
+ font-size: .8em;
+}
+
+.right4{
+  width: 50%;
+}
+.right4 form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.mail2{
+  padding-left: 1em;
+  height: 2.5em;
+  margin-bottom: 1.3em;
+}
+
+
+.submitButton {
+  background-color: var(--brightBlue);
+  padding: 8px 0px;
+  border-radius: 2px;
+  color:white;
+  font-family: var(--raleway);
+  font-weight: var(--700);
+  font-size: .9em;
+  border:none;
+  cursor: pointer;
+  width: 40%;
+}
+
+input[type="submit"]:hover{
+  filter:brightness(1.4);
+}
+
+#errorMsgHidden{
+  position: absolute;
+  bottom: 38px;
+  font-size: .7em;
+   /* visibility: hidden; */
+   display:none;
+  color:white;
 }
