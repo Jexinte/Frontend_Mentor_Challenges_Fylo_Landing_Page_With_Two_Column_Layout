@@ -178,6 +178,36 @@ bottom: 19px;
 .mail2 {
   margin-bottom: 1em;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8em;
+}
+
+.list1{
+  position: relative;
+  right:65px;
+  top:2em;
+}
+
+.list2{
+  position: relative;
+  top:4em;
+  right:58px;
+  margin-bottom: 2em;
+}
+
+.right {
+  position: relative;
+  top:70px;
+  right: -2em;
+}
+
+.social-medias {
+  right: -2em;
+}
+
 }
 
 @media screen and (max-width:600px) {
